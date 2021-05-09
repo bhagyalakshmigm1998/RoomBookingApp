@@ -1,0 +1,7 @@
+{% block title %}BAD REQUEST{% endblock %}
+{% block body %}
+  <h1>Internal server error</h1>
+  <p>Oops! Looks like the servers encountered a problem right now
+  <p><a href="{{ url_for('home') }}">Back to the home page</a>
+  <p><a href="{{ url_for('view_booking') }}">I want to view all the bookings again</a>
+{% endblock %}

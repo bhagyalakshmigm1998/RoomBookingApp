@@ -1,0 +1,7 @@
+{% block title %}BAD REQUEST{% endblock %}
+{% block body %}
+  <h1>BAD REQUEST</h1>
+  <p>Oops! Looks like what you're requesting doesn't exist anymore
+  <p><a href="{{ url_for('home') }}">redirect to the home page</a>
+  <p><a href="{{ url_for('view_booking') }}">I want to see all the bookings made again</a>
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <style>
+     h1
+     {
+            font-family:arvo
+            text-align:left
+            line-height:60px
+     }
+     h2
+     {
+            font-family:arvo
+            text-align:left
+            line-height:40px
+     }
+     h3
+     {
+            font-family:arvo
+            text-align:left
+            line-height:30px
+     }
+     p
+     {
+            font-family:arvo
+            text-align:left
+     }
+     </style>
+</head>
+<h1>Delete booking id:</h1>
+<body background="https://wallpaperaccess.com/full/93190.jpg">
+    <form action= "/api/v1/delete_booking" method="POST">
+         <label for="id">Delete booking id: </label><br><input type="number" font-family="arvo" name="id" id="id" required min="1"><br>
+    <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

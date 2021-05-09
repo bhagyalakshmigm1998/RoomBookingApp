@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<style>
+        p
+        {
+            font-family:arvo
+            text-align:left
+            font-colour: blue
+            line-height: 30px
+        }
+    </style>
+<font face = "arvo"  table-align=center text-align=center>
+      <table border = 1 class = "center" >
+         <tr>
+         <thead>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Date</td>
+            <td>Guests</td>
+            <td>Rooms</td>
+         </thead>
+         </tr>
+         {% for row in rows %}
+            <tr>
+               <td>{{row["id"]}}</td>
+               <td>{{row["name"]}}</td>
+               <td>{{row["email"]}}</td>
+               <td>{{row["phone"]}}</td>
+               <td>{{row["date_booked"]}}</td>
+               <td>{{row["guests"]}}</td>
+               <td>{{row["rooms"]}}</td>
+            </tr>
+         {% endfor %}
+</table>
+</font>
+<body background = "https://cdn.wallpapersafari.com/56/73/Tdil78.jpg"></body>
+         <p><a href = "{{ url_for('home') }}"> Go back to home page</a></p>
+         <p>(<a href = "{{('delete_id') }}">Delete a booking?</a>)</p>
+</html>

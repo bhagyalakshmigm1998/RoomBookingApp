@@ -1,0 +1,7 @@
+{% block title %}BAD REQUEST{% endblock %}
+{% block body %}
+  <h1>INo content!</h1>
+  <p>Oops! Looks like this page has no content available!
+  <p><a href="{{ url_for('home') }}">Back to the home page</a>
+  <p><a href="{{ url_for('view_booking') }}">I want to view all the bookings again</a>
+{% endblock %}

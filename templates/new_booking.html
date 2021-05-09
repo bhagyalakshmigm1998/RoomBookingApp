@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <style>
+     h1
+     {
+            font-family:arvo
+            text-align:left
+            line-height:60px
+     }
+     h2
+     {
+            font-family:arvo
+            text-align:left
+            line-height:40px
+     }
+     h3
+     {
+            font-family:arvo
+            text-align:left
+            line-height:30px
+     }
+    p
+     {
+            font-family:arvo
+            text-align:left
+            line-height:30px
+     }
+     </style>
+</head>
+<h1>Fill in the form below</h1>
+<body background="https://cutewallpaper.org/21/himalaya-wallpapers/Himalayas-Desktop-Wallpapers-Top-Free-Himalayas-Desktop-.jpg">
+    <form action= "/api/v1/add_details" method="POST">
+            <h2><label for="name">Username: </label><br><input type="text" font-family="arvo" name="name" id="name" required autofocus placeholder="Your username:" pattern="[a-zA-Z]{3,}" title="Please enter more than 3 letters"><br></h2>
+            <h2><label for="email">Email: </label><br><input type="text" font-family="arvo" name="email" id="email" required placeholder="Your email" pattern="[a-zA-Z.0-9]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{3}" title="Please enter a valid email address"><br></h2>
+            <h2><label for="phone">Phone number: </label><br><input type="tel" name="phone" font-family="arvo" id="phone" required placeholder="Please enter your phone number" pattern="[0-9]{10}" title="Please enter a valid phone number"><br></h2>
+            <h2><label for="date_booked">Booking date: </label><br><input type="date" font-family="arvo" name="date_booked" id="date_booked" required placeholder="Invalid date" min="22-04-2021"><br></h2>
+            <h2><label for="guests">Number of Guests: </label><br><input type="number" font-family="arvo" name="guests" id="guests" required min="1" max="4"><br></h2>
+            <h2><label for="rooms">Number of Rooms: </label><br><input type="number" font-family="arvo" name="rooms" id="rooms" required min="1" max="2"><br></h2>
+          <br>
+        <input type="submit" value="Submit" {font-style="arvo"} {line-height =30}  />
+    </form>
+</body>
+</html>

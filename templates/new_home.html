@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Take a Brek</title>
+    <style>
+        h1
+        {
+            font-family:arvo
+            text-align:left
+            line-height:70px
+        }
+        h2
+        {
+            font-family:arvo
+            text-align:left
+            line-height:50px
+        }
+        h3
+        {
+            font-family:arvo
+            text-align:left
+            line-height:35px
+        }
+        p
+        {
+            font-family:arvo
+            text-align:left
+            font-colour: blue
+            line-height: 30px
+        }
+    </style>
+    <h1>Welcome to Take a Brek!!</h1>
+    <h2>About us:</h2>
+    <p>Welcome to 'Take a Brek' in the Himalayas! We are a cozy inn located overlooking Hemkund Sahib lake, providing rooms for trekkers like you who are trekking to the Valley of Flowers!
+        We offer picturesque views of the Hemkund Sahib nestled in the mountains. This serene lake is home to some of the most beautiful flowers in creation like the Brahma Kamal, Himalayan blue poppy, etc., all of which you can wake up to at our inn.
+        We have about 20 rooms, and can accomodate about 20 guests at a go, and breakfast here is complimentary! Our bookings always run out like hot biscuits, so book your room now!</p>
+<body background="https://i.pinimg.com/originals/b1/a9/88/b1a98875048ce6dfc1c5e8fdae0dd148.jpg">
+      <h3>
+        <a href = "{{ url_for('home') }}"></a>
+      </h3>
+      <hr/>
+      {%- for message in get_flashed_messages() %}
+         {{ message }}
+      {%- endfor %}
+    <h3>Contact us at: 4446712345</h3>
+    <h3>Email us at: TakeABrek@gmail.com</h3>
+    <p> bookings(<a href = "{{('new_booking') }}">Book with us!</a>)</p>
+    <p><a href = "{{ url_for('view_booking') }}">Want to delete a booking?</a></p>
+    </body>
+</head>
+</html>
+
+
